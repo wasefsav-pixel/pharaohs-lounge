@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pharaoh's Lounge | Eat Like a Pharaoh, Dine Like Royalty</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black: #0b0b0b;
+      --gold: #d4af37;
+      --cream: #f4e9d8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: var(--black);
+      color: var(--cream);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.95);
+      border-bottom: 1px solid var(--gold);
+      z-index: 1000;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-family: 'Cinzel', serif;
+      color: var(--gold);
+      letter-spacing: 3px;
+      margin: 0;
+      font-size: 22px;
+    }
+
+    nav a {
+      color: var(--gold);
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)), url('hero.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 10%;
+    }
+
+    .hero h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 48px;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      letter-spacing: 1px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      padding: 120px 12%;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 1s ease forwards;
+    }
+
+    section:nth-child(even) { background: #0f0f0f; }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h3 {
+      font-family: 'Cinzel', serif;
+      color: var(--gold);
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(212,175,55,.3);
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+
+    .price { color: var(--gold); }
+
+    .badge { font-size: 12px; color: var(--gold); }
+
+    .cta {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 15px 40px;
+      background: var(--gold);
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .cta:hover { opacity: 0.85; }
+
+    footer {
+      background: black;
+      padding: 50px 10%;
+      text-align: center;
+      border-top: 1px solid var(--gold);
+    }
+
+    footer p { font-size: 14px; letter-spacing: 1px; }
+
+    .reserve-box {
+      background: #111;
+      padding: 40px;
+      border: 1px solid var(--gold);
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>PHARAOH'S LOUNGE</h1>
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#menu">MENU</a>
+    <a href="#drinks">DRINKS</a>
+    <a href="#afterdark">AFTER DARK</a>
+    <a href="#reserve">RESERVE</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Eat Like a Pharaoh<br>Dine Like Royalty</h2>
+    <p>An immersive Egyptian dining and nightlife experience blending ancient culture, modern luxury, and Camps Bay energy.</p>
+    <a href="#reserve" class="cta">Reserve Your Table</a>
+  </div>
+</section>
+
+<section id="about">
+  <h3>ABOUT PHARAOH'S LOUNGE</h3>
+  <p>Located in the heart of Camps Bay, Pharaoh’s Lounge is a luxury Egyptian restaurant by day and an underground speakeasy nightclub by night. Inspired by Ancient Egypt, Arabian lounges, and African heritage, we deliver an experience that is elegant, mysterious, and unforgettable.</p>
+  <p>Designed for tourists, locals, and the modern nightlife crowd, Pharaoh’s Lounge offers refined cuisine, signature cocktails, premium hookah, and curated DJ experiences.</p>
+</section>
+
+<section id="menu">
+  <h3>ROYAL MENU</h3>
+  <div class="menu-grid">
+    <div>
+      <h4>Starters</h4>
+      <div class="menu-item"><span>Koshari Croquettes <span class="badge">(V)</span></span><span class="price">R85</span></div>
+      <div class="menu-item"><span>Ful Medames & Pita <span class="badge">(V, GF)</span></span><span class="price">R75</span></div>
+      <div class="menu-item"><span>Bobotie Spring Rolls</span><span class="price">R95</span></div>
+    </div>
+
+    <div>
+      <h4>Main Courses</h4>
+      <div class="menu-item"><span>Lamb Kofta with Tahini</span><span class="price">R195</span></div>
+      <div class="menu-item"><span>Molokhia Chicken</span><span class="price">R175</span></div>
+      <div class="menu-item"><span>Seafood Egyptian Tagine</span><span class="price">R225</span></div>
+      <div class="menu-item"><span>Peri-Peri Ostrich Steak</span><span class="price">R265</span></div>
+      <div class="menu-item"><span>Vegan Kushari Bowl <span class="badge">(Vegan, GF)</span></span><span class="price">R145</span></div>
+    </div>
+
+    <div>
+      <h4>Desserts</h4>
+      <div class="menu-item"><span>Basbousa</span><span class="price">R75</span></div>
+      <div class="menu-item"><span>Om Ali</span><span class="price">R80</span></div>
+      <div class="menu-item"><span>Malva Pudding with Date Caramel</span><span class="price">R85</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="drinks">
+  <h3>DRINKS & HOOKAH</h3>
+  <div class="menu-grid">
+    <div>
+      <h4>Signature Cocktails</h4>
+      <div class="menu-item"><span>The Golden Ankh</span><span class="price">R120</span></div>
+      <div class="menu-item"><span>Cleopatra’s Kiss</span><span class="price">R125</span></div>
+      <div class="menu-item"><span>Nile Sunset Spritz</span><span class="price">R110</span></div>
+    </div>
+    <div>
+      <h4>Hookah Lounge</h4>
+      <p>Double Apple • Mint • Grape • Blueberry • Mango • Gum Mint</p>
+      <div class="menu-item"><span>Classic Hookah</span><span class="price">R180</span></div>
+      <div class="menu-item"><span>Premium Mix</span><span class="price">R220</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="afterdark">
+  <h3>PHARAOH’S AFTER DARK</h3>
+  <p>Every Friday & Saturday from 10PM – 4AM, Pharaoh’s Lounge transforms into an exclusive speakeasy-style nightclub.</p>
+  <p>Music: Afrohouse • Amapiano • Arabic Fusion • R&B • Curated DJs</p>
+  <p>Dress Code: Elegant | Entry 18+</p>
+</section>
+
+<section id="reserve">
+  <h3>RESERVATIONS</h3>
+  <div class="reserve-box">
+    <p>📞 Call: +27 XX XXX XXXX</p>
+    <p>📲 WhatsApp: +27 XX XXX XXXX</p>
+    <p>📝 Online bookings launching soon</p>
+    <a href="tel:+27XXXXXXXX" class="cta">Call to Reserve</a>
+  </div>
+</section>
+
+<footer>
+  <p>© Pharaoh’s Lounge | Camps Bay, Cape Town</p>
+  <p>Restaurant by Day • Club by Night</p>
+</footer>
+
+</body>
+</html>
