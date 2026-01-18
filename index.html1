@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Altitude Music Festival</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b0b0b;
+      color: #f5f5f5;
+    }
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 4rem;
+      letter-spacing: 3px;
+    }
+    header p {
+      font-size: 1.3rem;
+      max-width: 700px;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0,0,0,0.85);
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      z-index: 1000;
+    }
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff7a18;
+    }
+    section {
+      padding: 80px 10%;
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ff7a18;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background-color: #161616;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #ffd194;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#vision">Vision</a>
+  <a href="#lineup">Lineup</a>
+  <a href="#tickets">Tickets</a>
+  <a href="#featured">Featured Artist</a>
+</nav>
+
+<header>
+  <h1>ALTITUDE</h1>
+  <p>Where music rises above time. A one-day, multi‑era festival celebrating legends, icons, and the future of sound.</p>
+</header>
+
+<section id="about">
+  <h2>Festival Overview</h2>
+  <p><span class="highlight">Location:</span> Miami Beach Bandshell, Miami, FL</p>
+  <p><span class="highlight">Date:</span> One-Day Festival</p>
+  <p><span class="highlight">Experience:</span> Oceanfront views, immersive sound, iconic performances, and a crowd united by music across generations.</p>
+</section>
+
+<section id="vision">
+  <h2>Festival Vision</h2>
+  <p><strong>Altitude</strong> exists to show how music evolves while staying emotionally timeless. From classic rock and soul to hip‑hop and modern pop, the festival honors artists who changed the culture and inspired the next generation.</p>
+  <p>We center voices that pushed boundaries, broke rules, and shaped the sound of their era. When fans leave, we want them feeling connected — not just to music, but to its history and future.</p>
+</section>
+
+<section id="lineup">
+  <h2>Legendary Lineup</h2>
+  <div class="card-grid">
+    <div class="card"><h3>The Beatles</h3><p>Hey Jude<br>Let It Be<br>Come Together</p></div>
+    <div class="card"><h3>Stevie Wonder</h3><p>Superstition<br>Isn’t She Lovely<br>Signed, Sealed, Delivered</p></div>
+    <div class="card"><h3>Madonna</h3><p>Like a Prayer<br>Vogue<br>Material Girl</p></div>
+    <div class="card"><h3>Nirvana</h3><p>Smells Like Teen Spirit<br>Come As You Are<br>Lithium</p></div>
+    <div class="card"><h3>Eminem</h3><p>Lose Yourself<br>Without Me<br>Stan</p></div>
+    <div class="card"><h3>Olivia Rodrigo</h3><p>drivers license<br>good 4 u<br>vampire</p></div>
+  </div>
+</section>
+
+<section id="tickets">
+  <h2>Tickets</h2>
+  <p><strong>General Admission:</strong> $200</p>
+  <p><strong>VIP:</strong> $250</p>
+  <p><strong>Platinum:</strong> $300</p>
+  <p>All tickets include full festival access, oceanfront views, and unforgettable performances.</p>
+</section>
+
+<section id="featured">
+  <h2>Featured Artist – Debut Album</h2>
+  <p><strong>Artist Identity:</strong> A genre‑blending performer inspired by hip‑hop, pop, and alternative sounds.</p>
+  <p><strong>Album Concept:</strong> This album represents growth, ambition, and rising above limits — matching the energy of Altitude.</p>
+  <p><strong>Themes:</strong> Identity, confidence, evolution, and self‑discovery.</p>
+  <p><strong>Tracklist:</strong></p>
+  <ul>
+    <li>Higher Ground</li>
+    <li>No Gravity</li>
+    <li>Skyline Dreams</li>
+    <li>Pressure</li>
+    <li>Up From Here</li>
+    <li>Altitude (Hit Single)</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2026 Altitude Music Festival | Music Beyond Time</p>
+</footer>
+
+</body>
+</html>
